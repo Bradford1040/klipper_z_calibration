@@ -136,7 +136,7 @@ restart_klipper()
     fi
 }
 
-uinstall()
+uninstall()
 {
     if [ -f "${KLIPPER_PATH}/klippy/extras/z_calibration.py" ]; then
         echo -n "Uninstalling z_calibration... "
@@ -183,6 +183,6 @@ if [ ! $UNINSTALL ]; then
     link_extension
     add_updater
 else
-    uinstall
+    uninstall
 fi
 restart_klipper
