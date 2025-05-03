@@ -107,7 +107,7 @@ add_updater()
         echo -e "\n[update_manager z_calibration]" >> "$MOONRAKER_CONFIG"
         echo "type: git_repo" >> "$MOONRAKER_CONFIG"
         echo "path: ${SRCDIR}" >> "$MOONRAKER_CONFIG"
-        echo "origin: https://github.com/protoloft/klipper_z_calibration.git" >> "$MOONRAKER_CONFIG"
+        echo "origin: https://github.com/Bradford1040/klipper_z_calibration.git" >> "$MOONRAKER_CONFIG"
         echo "managed_services: klipper" >> "$MOONRAKER_CONFIG"
         echo -e "\n" >> "$MOONRAKER_CONFIG"
         echo "[OK]"

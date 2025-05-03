@@ -9,25 +9,25 @@ always be perfect - no matter which nozzle or new flex-plate is being tested.
 </p>
 
 <p align="center">
-  <a aria-label="Downloads" href="https://github.com/protoloft/klipper_z_calibration/releases">
-    <img src="https://img.shields.io/github/release/protoloft/klipper_z_calibration?display_name=tag&style=flat-square">
+  <a aria-label="Downloads" href="https://github.com/Bradford1040/klipper_z_calibration/releases">
+    <img src="https://img.shields.io/github/release/Bradford1040/klipper_z_calibration?display_name=tag&style=flat-square">
   </a>
-  <a aria-label="Stars" href="https://github.com/protoloft/klipper_z_calibration/stargazers">
-    <img src="https://img.shields.io/github/stars/protoloft/klipper_z_calibration?style=flat-square">
+  <a aria-label="Stars" href="https://github.com/Bradford1040/klipper_z_calibration/stargazers">
+    <img src="https://img.shields.io/github/stars/Bradford1040/klipper_z_calibration?style=flat-square">
   </a>
-  <a aria-label="Forks" href="https://github.com/protoloft/klipper_z_calibration/network/members">
-    <img src="https://img.shields.io/github/forks/protoloft/klipper_z_calibration?style=flat-square">
+  <a aria-label="Forks" href="https://github.com/Bradford1040/klipper_z_calibration/network/members">
+    <img src="https://img.shields.io/github/forks/Bradford1040/klipper_z_calibration?style=flat-square">
   </a>
-  <a aria-label="License" href="https://github.com/protoloft/klipper_z_calibration/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/protoloft/klipper_z_calibration?style=flat-square">
+  <a aria-label="License" href="https://github.com/Bradford1040/klipper_z_calibration/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/Bradford1040/klipper_z_calibration?style=flat-square">
   </a>
 </p>
 
 ## Documentation
 
-Visit the [Wiki](https://github.com/protoloft/klipper_z_calibration/wiki) to view the full documentation for this Klipper plugin.
+Visit the [Wiki](https://github.com/Bradford1040/klipper_z_calibration/wiki) to view the full documentation for this Klipper plugin.
 
-The latest release notes are [here](https://github.com/protoloft/klipper_z_calibration/wiki/Changelog).
+The latest release notes are [here](https://github.com/Bradford1040/klipper_z_calibration/wiki/Changelog).
 
 :pushpin: **And remember:** The smaller the switch-offset, the further the
  nozzle is away from the bed! :wink:
