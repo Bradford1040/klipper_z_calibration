@@ -9,7 +9,7 @@ always be perfect - no matter which nozzle or new flex-plate is being tested.
 </p>
 
 <p align="center">
-  <a aria-label="Downloads" href="https://github.com/Bradford1040/klipper_z_calibration/releases">
+    <a><img src="https://img.shields.io/github/last-commit/Bradford1040/kiauh"></a>
     <img src="https://img.shields.io/github/release/Bradford1040/klipper_z_calibration?display_name=tag&style=flat-square">
   </a>
   <a aria-label="Stars" href="https://github.com/Bradford1040/klipper_z_calibration/stargazers">
