@@ -1,10 +1,14 @@
 # Klipper plugin for a self-calibrating Z offset.
 #
-# Copyright (C) 2021-2024  Titus Meyer <info@protoloft.org>
+# Copyright (C) 2021-2025  Titus Meyer <info@protoloft.org>
 #
 # This file may be distributed under the terms of the GNU GPLv3 license.
 import logging
-from mcu import MCU_endstop
+try:
+    from klippy.mcu import MCU_endstop
+except ImportError:
+    class MCU_endstop:
+        pass  # Fallback stub for MCU_endstop if klippy.mcu is unavailable
 
 class ZCalibrationHelper:
     def __init__(self, config):
@@ -74,18 +78,21 @@ class ZCalibrationHelper:
     def handle_connect(self):
         # get endstop
         for endstop, name in self.query_endstops.endstops:
-            if name == 'z':
+            if name == 'stepper_z' or name == 'z':
                 # check for virtual endstop on z
                 if not isinstance(endstop, MCU_endstop):
                     raise self.printer.config_error("A virtual endstop for z"
                                                     " is not supported for %s"
                                                     % (self.config.get_name()))
                 self.z_endstop = EndstopWrapper(endstop)
+        if self.z_endstop is None:
+            raise self.printer.config_error("No z-endstop found for %s"
+                                            % (self.config.get_name()))
         # get probing settings
         probe = self.printer.lookup_object('probe', default=None)
         if probe is None:
             raise self.printer.config_error("A probe is needed for %s"
-                                            % (self.config.get_name()))
+                                        % (self.config.get_name()))
         # TODO: remove: deprecated since 2024-06-10
         if hasattr(probe, 'sample_count'):
             if self.samples is None:
